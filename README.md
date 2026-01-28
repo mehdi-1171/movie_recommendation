@@ -127,6 +127,8 @@ Key Statistics:
       │   ├── movies.csv                  # Movie metadata
       │   └── ratings.csv                 # User ratings
       │   └── movieLens_svd_model.pkl     # Train Model
+      ├── img/
+      │   ├── rating_distribution.png  
       │
       ├── eda.py                          # Exploratory Data Analysis
       ├── recommendation_system.py        # Recommendation Engine module
