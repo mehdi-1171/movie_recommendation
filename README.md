@@ -102,6 +102,22 @@ Key Statistics:
 - Rating density: ~6.3% (sparse matrix)
 - Rating distribution: Approximately normal with mean ~3.5
 
+## Exploratory Data Analysis
+
+1. Rating
+[Rating Distribution](https://github.com/mehdi-1171/movie_recommendation/img/rating_distribution.png?raw=true)
+2. Some Key Result
+
+|   |         Variable | value | 
+|--:|-----------------:|:------|
+| 1 |         Num User | 6781  |
+| 2 |        Num Movie | 27922 |
+| 3 |    Data sparsity | 0.55% |
+| 4 |       Avg Rating | 154.6 |
+| 5 | User Less Rating | 20    |
+| 6 | User Most Rating | 3893  |
+
+
 ## 💻 Code Structure
 
       movie_recommendation/

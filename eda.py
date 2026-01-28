@@ -20,30 +20,25 @@ class DataAnalysis:
         self.df_rating = read_csv(DATA_PATH + self.RATINGS_FILES)
 
     def analyze_data(self):
-        """تحلیل داده‌ها"""
-        print("\n=== تحلیل داده‌ها ===")
+        print("\n=== Data Analysis ===")
 
-        # توزیع ریتینگ‌ها
         rating_dist = self.df_rating['rating'].value_counts().sort_index()
-        print("توزیع ریتینگ‌ها:")
+        print("Rating Distribution:")
         for rating, count in rating_dist.items():
             print(f"  {rating}: {count} ({count / len(self.df_rating) * 100:.1f}%)")
 
-        # تعداد کاربران و فیلم‌ها
         n_users = self.df_rating['userId'].nunique()
         n_movies = self.df_rating['movieId'].nunique()
-        print(f"\nتعداد کاربران: {n_users}")
-        print(f"تعداد فیلم‌ها: {n_movies}")
+        print(f"\nNumber of User: {n_users}")
+        print(f"Number of Movies {n_movies}")
 
-        # تراکم ماتریس
         density = len(self.df_rating) / (n_users * n_movies) * 100
-        print(f"تراکم داده‌ها: {density:.4f}%")
+        print(f"Data sparsity: {density:.4f}%")
 
-        # فعالیت کاربران
         user_activity = self.df_rating['userId'].value_counts()
-        print(f"\nمیانگین ریتینگ هر کاربر: {user_activity.mean():.1f}")
-        print(f"کاربر با کمترین ریتینگ: {user_activity.min()}")
-        print(f"کاربر با بیشترین ریتینگ: {user_activity.max()}")
+        print(f"\nAvg of any user rating: {user_activity.mean():.1f}")
+        print(f"A user with less rating  {user_activity.min()}")
+        print(f"A User with most rating {user_activity.max()}")
 
     def analysis_process(self):
         self.read_movie_data()
