@@ -104,9 +104,11 @@ Key Statistics:
 
 ## Exploratory Data Analysis
 
-1. Rating
-[Rating Distribution](https://github.com/mehdi-1171/movie_recommendation/blob/main/img/rating_distribution.png)
-2. Some Key Result
+1. **Rating Distribution**
+
+<img src="img/rating_distribution.png" alt="Rating Distribution" width="500" />
+
+2. Some Data 
 
 |   |         Variable | value | 
 |--:|-----------------:|:------|
