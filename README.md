@@ -139,11 +139,11 @@ Key Statistics:
 ### Why SVD (FunkSVD)?
 After comprehensive comparison of multiple algorithms, SVD (Singular Value Decomposition) was selected as the primary model due to:
 
-1- Performance: Achieves RMSE of 0.82-0.84, which is competitive with more complex models
-2- Efficiency: Faster training and prediction compared to SVD++
-3- Interpretability: Latent factors can be interpreted as abstract features
-4- Robustness: Less prone to overfitting with proper regularization
-5- Scalability: Can handle large datasets efficiently
+1. Performance: Achieves RMSE of 0.82-0.84, which is competitive with more complex models
+2. Efficiency: Faster training and prediction compared to SVD++
+3. Interpretability: Latent factors can be interpreted as abstract features
+4. Robustness: Less prone to overfitting with proper regularization
+5. Scalability: Can handle large datasets efficiently
 
 ### Optimal Hyperparameters (for MovieLens 100K):
 
@@ -191,7 +191,7 @@ For example i recommended 5 best movies for **user_id = 4** :
   | 4 |  171011 | Planet Earth II (2016)          | Documentary         |          3.76678 |
   | 5 |  151113 | A Man Called Ove (2015)         | Comedy-Drama        |          3.75257 |
 
-Interpretation: The system recommends diverse genres including drama, documentary, and comedy, with predicted ratings all above 3.75 (indicating strong recommendations).
+**Interpretation:** The system recommends diverse genres including drama, documentary, and comedy, with predicted ratings all above 3.75 (indicating strong recommendations).
 
 ## 🎯 Conclusion
 
